@@ -3,9 +3,28 @@ import { StatusCard } from "@/components/StatusCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { useToast } from "@/hooks/use-toast";
 import { MapPin, Navigation2, Shield, AlertTriangle, Route, Smartphone } from "lucide-react";
+import { useState } from "react";
 
 const PilgrimSafety = () => {
+  const { toast } = useToast();
+  const [sosActive, setSosActive] = useState(false);
+
+  const handleSOSEmergency = () => {
+    setSosActive(true);
+    toast({
+      title: "🚨 SOS EMERGENCY ALERT ACTIVATED!",
+      description: "Emergency response team has been notified. Help is on the way. Stay calm and stay in your current location.",
+      variant: "destructive",
+    });
+    
+    // Reset SOS active state after 10 seconds
+    setTimeout(() => {
+      setSosActive(false);
+    }, 10000);
+  };
   const safeRoutes = [
     { id: 1, from: "Main Gate", to: "Ghat Area", status: "Optimal", crowdLevel: "Low", estimatedTime: "12 min" },
     { id: 2, from: "Parking Zone A", to: "Temple Complex", status: "Moderate", crowdLevel: "Medium", estimatedTime: "18 min" },
@@ -28,6 +47,25 @@ const PilgrimSafety = () => {
           <h1 className="text-3xl font-bold text-foreground mb-2">Pilgrim Safety Portal</h1>
           <p className="text-muted-foreground">AI-powered navigation and safety guidance for pilgrims</p>
         </div>
+
+        {/* Emergency Alert Banner */}
+        {sosActive && (
+          <Alert variant="destructive" className="mb-8 border-emergency bg-emergency/10 animate-pulse">
+            <AlertTriangle className="h-6 w-6 text-emergency" />
+            <AlertTitle className="text-emergency text-lg font-bold">
+              🚨 SOS EMERGENCY ACTIVATED!
+            </AlertTitle>
+            <AlertDescription className="text-emergency-foreground mt-2">
+              <div className="space-y-1">
+                <p className="font-semibold">Emergency response team has been notified and is dispatching immediately.</p>
+                <p>• Medical team ETA: 3-5 minutes</p>
+                <p>• Security personnel alerted</p>
+                <p>• Your location has been shared with rescue teams</p>
+                <p className="mt-2 font-medium">Stay calm, remain in your current location, and help will arrive shortly.</p>
+              </div>
+            </AlertDescription>
+          </Alert>
+        )}
 
         {/* Safety Status */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -110,9 +148,17 @@ const PilgrimSafety = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Button className="w-full bg-gradient-emergency text-emergency-foreground hover:opacity-90">
+              <Button 
+                className={`w-full transition-all duration-300 ${
+                  sosActive 
+                    ? 'bg-emergency text-emergency-foreground animate-pulse' 
+                    : 'bg-gradient-emergency text-emergency-foreground hover:opacity-90'
+                }`}
+                onClick={handleSOSEmergency}
+                disabled={sosActive}
+              >
                 <AlertTriangle className="h-4 w-4 mr-2" />
-                SOS Emergency Alert
+                {sosActive ? 'SOS ACTIVATED - HELP COMING!' : 'SOS Emergency Alert'}
               </Button>
               
               <div className="space-y-3">

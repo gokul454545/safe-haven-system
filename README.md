@@ -233,6 +233,7 @@ src/
 - **Coverage**: 10km radius with LoRa mesh
 - **Capacity**: Handles 1M+ concurrent users
 - **Uptime**: 99.9% system availability
+<<<<<<< HEAD
 
 ## 🤝 Contributing
 
@@ -242,3 +243,5 @@ src/
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+=======
+>>>>>>> 75aeb6d8b1963894dc1da9c68daef67988b0f470

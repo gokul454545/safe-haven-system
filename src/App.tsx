@@ -11,7 +11,7 @@ import LostFound from "./pages/LostFound";
 import HealthMonitoring from "./pages/HealthMonitoring";
 import DroneOperations from "./pages/DroneOperations";
 import Analytics from "./pages/Analytics";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound"; 
  
 const queryClient = new QueryClient();
 

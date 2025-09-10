@@ -48,6 +48,8 @@ Our solution goes beyond traditional safety systems by integrating **AI, IoT, AR
 ```
 
 ## 🖥️ Application Pages & Flow
+### login page **
+**flow**:any gmail with @gmail.com and password 1
 
 ### 1. **Command Dashboard** (`/`)
 - **Purpose**: Central control hub for authorities

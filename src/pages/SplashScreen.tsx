@@ -11,7 +11,7 @@ const SplashScreen = () => {
     }, 2500);
 
     return () => clearTimeout(timer);
-  }, [navigate]);
+  }, [navigate]); 
 
   return (
     <div className="min-h-screen bg-gradient-hero flex items-center justify-center">

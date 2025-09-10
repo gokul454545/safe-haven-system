@@ -204,7 +204,7 @@ const LostFound = () => {
                     <div className="w-full bg-border rounded-full h-2 mt-3">
                       <div 
                         className="bg-gradient-primary h-2 rounded-full" 
-                        style={{ width: `${(stat.matches / stat.scans) * 100 * 1000}%` }}
+                        style={{ width: `${(stat.matches / stat.scans) * 100 * 100}%` }}
                       ></div>
                     </div>
                   </div>

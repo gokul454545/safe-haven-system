@@ -20,5 +20,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Redirect to splash screen on initial load
+      if (window.location.pathname === '/') {
+        window.location.pathname = '/splash';
+      }
+    </script>
   </body>
 </html>

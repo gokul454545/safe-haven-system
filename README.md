@@ -1,4 +1,4 @@
-# SAFE SIMHASTHa - Safer India Begins With Smarter Actions
+# SAFE SIMHASTHA - Safer India Begins With Smarter Actions
 
 ## 🚨 Problem Statement
 
@@ -233,14 +233,6 @@ src/
 - **Coverage**: 10km radius with LoRa mesh
 - **Capacity**: Handles 1M+ concurrent users
 - **Uptime**: 99.9% system availability
-<<<<<<< HEAD
+------------------
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'ignite'`)
-4. Push to branch (`git push origin main`)
-5. Open a Pull Request
-
-=======

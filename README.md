@@ -10,7 +10,7 @@
 - **Lack of predictive** and preventive safety measures
 
 > *"Simhastha faces overcrowding, delayed medical response, and lost pilgrims. Unpredictable crowd flow and lack of real-time alerts increase risks, demanding a smart, predictive safety and health management solution."*
-
+ 
 ## 🎯 Proposed Solution
 
 **Smart Safety & Medical Ecosystem** using **AI + IoT + AR + Drones**

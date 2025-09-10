@@ -147,7 +147,7 @@ const Analytics = () => {
                         View Zone Details
                       </Button>
                     </div>
-                  </div>
+                  </div> 
                 ))}
               </div>
             </CardContent>

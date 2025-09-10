@@ -12,7 +12,7 @@ interface StatusCardProps {
 
 export const StatusCard = ({ 
   title, 
-  value, 
+  value,  
   subtitle, 
   icon: Icon, 
   variant = "default",

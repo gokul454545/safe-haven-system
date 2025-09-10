@@ -15,7 +15,7 @@ const DroneOperations = () => {
       location: { sector: "Sector 7", coords: "28.6139° N, 77.2090° E" },
       battery: 87,
       altitude: 120,
-      speed: 25,
+      speed: 25, 
       eta: "3 min",
       payload: "Emergency Medical Kit"
     },

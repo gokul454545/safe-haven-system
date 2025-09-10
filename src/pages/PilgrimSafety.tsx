@@ -160,7 +160,7 @@ const PilgrimSafety = () => {
                 <AlertTriangle className="h-4 w-4 mr-2" />
                 {sosActive ? 'SOS ACTIVATED - HELP COMING!' : 'SOS Emergency Alert'}
               </Button>
-              
+               
               <div className="space-y-3">
                 <h4 className="font-semibold text-foreground">Nearby Services</h4>
                 {emergencyServices.map((service, index) => (

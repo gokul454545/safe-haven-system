@@ -49,7 +49,7 @@ const CommandDashboard = () => {
               <div className="flex items-center space-x-2">
                 <div className="h-3 w-3 bg-success rounded-full animate-pulse"></div>
                 <span>All Systems Operational</span>
-              </div>
+              </div> 
               <div className="text-sm opacity-80">
                 Live Monitoring • 24/7 Protection • Real-time Response
               </div>

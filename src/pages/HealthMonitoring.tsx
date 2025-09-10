@@ -16,7 +16,7 @@ const HealthMonitoring = () => {
       vitals: { heartRate: 145, temperature: 99.8, location: "Sector 7" },
       time: "2 min ago"
     },
-    {
+    { 
       id: "HB-4522",
       pilgrim: "Suresh Gupta",
       age: 45,

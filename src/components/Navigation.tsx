@@ -14,7 +14,7 @@ const Navigation = () => {
     { path: "/health-monitoring", icon: Heart, label: "Health Monitor", active: location.pathname === "/health-monitoring" },
     { path: "/drone-ops", icon: Radio, label: "Drone Operations", active: location.pathname === "/drone-ops" },
     { path: "/analytics", icon: BarChart3, label: "Analytics", active: location.pathname === "/analytics" },
-  ];
+  ]; 
 
   return (
     <nav className="bg-card shadow-card border-b border-border">

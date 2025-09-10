@@ -1,4 +1,4 @@
-# Simhastha Safety AI - Smart Safety & Medical Ecosystem
+# SAFE SIMHASTHa - Safer India Begins With Smarter Actions
 
 ## 🚨 Problem Statement
 

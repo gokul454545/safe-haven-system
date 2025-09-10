@@ -20,10 +20,10 @@ const SplashScreen = () => {
           <LeafLogo className="w-24 h-24 mx-auto text-primary-foreground drop-shadow-lg" />
         </div>
         <h1 className="text-4xl font-bold text-primary-foreground mb-2">
-          Simhastha Safety AI
+          Safe Simhastha
         </h1>
         <p className="text-primary-foreground/80 text-lg">
-          Smart Safety & Medical Ecosystem
+          Safer India begins with smarter actions
         </p>
       </div>
     </div>

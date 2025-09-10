@@ -57,7 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Safety Ecosystem Custom Colors
+        // Safety Ecosystem Custom Colors 
         safety: {
           primary: "hsl(var(--safety-primary))",
           secondary: "hsl(var(--safety-secondary))",

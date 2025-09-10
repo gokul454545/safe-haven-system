@@ -94,7 +94,7 @@ Our solution goes beyond traditional safety systems by integrating **AI, IoT, AR
   - Aerial surveillance and announcements
 - **Flow**: Mission planning → Drone dispatch → Real-time monitoring → Mission completion
 
-### 6. **AI Analytics & Predictions** (`/analytics`)
+### 6. **Analytics & Predictions** (`/analytics`)
 - **Purpose**: Predictive insights and data analysis
 - **Features**:
   - ML-powered risk predictions
@@ -242,17 +242,3 @@ src/
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## 🆘 Support
-
-For support and questions:
-- 📧 Email: support@simhastha-safety.ai
-- 💬 Discord: [Join our community](https://discord.gg/simhastha-safety)
-- 📖 Documentation: [Full docs](https://docs.simhastha-safety.ai)
-
----
-
-**Built with ❤️ for the safety of millions of pilgrims during Simhastha Kumbh Mela**

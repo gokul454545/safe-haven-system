@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Heart, Users, Radio, MapPin, BarChart3 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import LeafLogo from "./ui/leaflogo";
+
 
 const Navigation = () => {
   const location = useLocation();
@@ -11,7 +13,7 @@ const Navigation = () => {
     { path: "/lost-found", icon: Users, label: "Lost & Found", active: location.pathname === "/lost-found" },
     { path: "/health-monitoring", icon: Heart, label: "Health Monitor", active: location.pathname === "/health-monitoring" },
     { path: "/drone-ops", icon: Radio, label: "Drone Operations", active: location.pathname === "/drone-ops" },
-    { path: "/analytics", icon: BarChart3, label: "AI Analytics", active: location.pathname === "/analytics" },
+    { path: "/analytics", icon: BarChart3, label: "Analytics", active: location.pathname === "/analytics" },
   ];
 
   return (
@@ -20,11 +22,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <div className="bg-gradient-primary p-2 rounded-lg">
-              <Shield className="h-6 w-6 text-white" />
+             <LeafLogo className="h-6 w-6 text-white" />
+
+
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Simhastha Safety AI</h1>
-              <p className="text-xs text-muted-foreground">Smart Safety & Medical Ecosystem</p>
+              <h1 className="text-xl font-bold text-foreground">SAFE SIMHASTHA</h1>
             </div>
           </div>
           

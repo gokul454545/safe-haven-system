@@ -44,7 +44,7 @@ const CommandDashboard = () => {
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white">
             <h1 className="text-4xl font-bold mb-2">Simhastha Command Center</h1>
-            <p className="text-xl opacity-90">AI-Powered Safety & Medical Ecosystem</p>
+            <p className="text-xl opacity-90">Safer India Begins With Smarter Actions</p>
             <div className="flex items-center space-x-6 mt-4">
               <div className="flex items-center space-x-2">
                 <div className="h-3 w-3 bg-success rounded-full animate-pulse"></div>

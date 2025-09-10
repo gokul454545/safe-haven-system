@@ -18,7 +18,7 @@ const AuthPage = () => {
     if (loginForm.email && loginForm.password) {
       toast({
         title: "Login Successful",
-        description: "Welcome to Simhastha Safety AI!",
+        description: "Welcome to Safe Simhastha!",
       });
       navigate("/");
     } else {
@@ -60,8 +60,8 @@ const AuthPage = () => {
       <div className="w-full max-w-md animate-slide-up">
         <div className="text-center mb-8">
           <LeafLogo className="w-16 h-16 mx-auto text-primary mb-4" />
-          <h1 className="text-3xl font-bold text-foreground">Simhastha Safety AI</h1>
-          <p className="text-muted-foreground mt-2">Smart Safety & Medical Ecosystem</p>
+          <h1 className="text-3xl font-bold text-foreground">Safe Simhastha</h1>
+          <p className="text-muted-foreground mt-2">Safer India Begins with Smarter Actions</p>
         </div>
 
         <Tabs defaultValue="login" className="w-full">

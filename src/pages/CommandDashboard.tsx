@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { StatusCard } from "@/components/StatusCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import EmergencyBroadcast from "@/components/EmergencyBroadcast";
+import { useToast } from "@/hooks/use-toast";
 import { 
   Users, 
   Heart, 
@@ -12,11 +15,14 @@ import {
   Activity,
   Radio,
   Eye,
-  TrendingUp
+  TrendingUp,
+  Megaphone
 } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
 
 const CommandDashboard = () => {
+  const [broadcastOpen, setBroadcastOpen] = useState(false);
+  const { toast } = useToast();
   const liveAlerts = [
     { id: 1, type: "warning", message: "High crowd density detected in Sector 7", time: "2 min ago", severity: "Medium" },
     { id: 2, type: "emergency", message: "Medical emergency - Halo Band Alert #HB-4521", time: "5 min ago", severity: "High" },
@@ -138,8 +144,11 @@ const CommandDashboard = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <Button className="w-full bg-gradient-emergency text-emergency-foreground hover:opacity-90">
-                <AlertTriangle className="h-4 w-4 mr-2" />
+              <Button 
+                onClick={() => setBroadcastOpen(true)}
+                className="w-full bg-gradient-emergency text-emergency-foreground hover:opacity-90"
+              >
+                <Megaphone className="h-4 w-4 mr-2" />
                 Emergency Broadcast
               </Button>
               <Button variant="outline" className="w-full">
@@ -201,6 +210,11 @@ const CommandDashboard = () => {
           </CardContent>
         </Card>
       </div>
+
+      <EmergencyBroadcast 
+        isOpen={broadcastOpen}
+        onClose={() => setBroadcastOpen(false)}
+      />
     </div>
   );
 };

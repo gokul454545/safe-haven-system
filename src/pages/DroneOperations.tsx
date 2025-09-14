@@ -1,11 +1,15 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { StatusCard } from "@/components/StatusCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import DroneLiveFeed from "@/components/DroneLiveFeed";
 import { Radio, Battery, MapPin, Package, AlertTriangle, Eye, Navigation2 } from "lucide-react";
 
 const DroneOperations = () => {
+  const [selectedDrone, setSelectedDrone] = useState<any>(null);
+  const [liveFeedOpen, setLiveFeedOpen] = useState(false);
   const droneFleet = [
     {
       id: "D-01",
@@ -176,10 +180,17 @@ const DroneOperations = () => {
                         Payload: {drone.payload} • Altitude: {drone.altitude}m • Speed: {drone.speed} km/h
                       </div>
                       <div className="flex space-x-2">
-                        <Button size="sm" variant="outline">
-                          <Eye className="h-4 w-4 mr-1" />
-                          Live Feed
-                        </Button>
+                          <Button 
+                            size="sm" 
+                            variant="outline"
+                            onClick={() => {
+                              setSelectedDrone(drone);
+                              setLiveFeedOpen(true);
+                            }}
+                          >
+                            <Eye className="h-4 w-4 mr-1" />
+                            Live Feed
+                          </Button>
                         <Button size="sm" variant="outline">
                           <MapPin className="h-4 w-4 mr-1" />
                           Track
@@ -260,6 +271,15 @@ const DroneOperations = () => {
             </div>
           </CardContent>
         </Card>
+
+        <DroneLiveFeed 
+          drone={selectedDrone}
+          isOpen={liveFeedOpen}
+          onClose={() => {
+            setLiveFeedOpen(false);
+            setSelectedDrone(null);
+          }}
+        />
       </div>
     </div>
   );

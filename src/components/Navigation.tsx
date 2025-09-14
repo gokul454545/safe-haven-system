@@ -8,13 +8,13 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", icon: Shield, label: "Command Dashboard", active: location.pathname === "/" },
+    { path: "/command-dashboard", icon: Shield, label: "Command Dashboard", active: location.pathname === "/command-dashboard" },
     { path: "/pilgrim-safety", icon: MapPin, label: "Pilgrim Safety", active: location.pathname === "/pilgrim-safety" },
     { path: "/lost-found", icon: Users, label: "Lost & Found", active: location.pathname === "/lost-found" },
     { path: "/health-monitoring", icon: Heart, label: "Health Monitor", active: location.pathname === "/health-monitoring" },
     { path: "/drone-ops", icon: Radio, label: "Drone Operations", active: location.pathname === "/drone-ops" },
     { path: "/analytics", icon: BarChart3, label: "Analytics", active: location.pathname === "/analytics" },
-  ]; 
+  ];
 
   return (
     <nav className="bg-card shadow-card border-b border-border">

@@ -1,12 +1,15 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { StatusCard } from "@/components/StatusCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import PhotoUploadScanner from "@/components/PhotoUploadScanner";
 import { Users, Search, Camera, Clock, MapPin, AlertCircle } from "lucide-react";
 
 const LostFound = () => {
+  const [scannerOpen, setScannerOpen] = useState(false);
   const recentMissing = [
     { 
       id: "LF-2024-001", 
@@ -112,7 +115,11 @@ const LostFound = () => {
                 <p className="text-sm text-muted-foreground">
                   Upload a clear photo for AI facial recognition search
                 </p>
-                <Button variant="outline" className="w-full mt-3">
+                <Button 
+                  variant="outline" 
+                  className="w-full mt-3"
+                  onClick={() => setScannerOpen(true)}
+                >
                   <Camera className="h-4 w-4 mr-2" />
                   Choose Photo
                 </Button>
@@ -213,6 +220,11 @@ const LostFound = () => {
             </div>
           </CardContent>
         </Card>
+
+        <PhotoUploadScanner 
+          isOpen={scannerOpen}
+          onClose={() => setScannerOpen(false)}
+        />
       </div>
     </div>
   );

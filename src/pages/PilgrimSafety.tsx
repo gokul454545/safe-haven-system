@@ -41,6 +41,22 @@ const PilgrimSafety = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
+      {/* Emergency Alert Banner - Shows when SOS is active */}
+      {sosActive && (
+        <div className="bg-gradient-emergency text-emergency-foreground py-4 px-4 animate-pulse">
+          <div className="container mx-auto">
+            <div className="flex items-center justify-center space-x-3">
+              <AlertTriangle className="h-6 w-6 animate-bounce" />
+              <div className="text-center">
+                <div className="font-bold text-lg">🚨 EMERGENCY SOS ACTIVATED 🚨</div>
+                <div className="text-sm">Emergency response team dispatched • Location locked • Stay in position</div>
+              </div>
+              <AlertTriangle className="h-6 w-6 animate-bounce" />
+            </div>
+          </div>
+        </div>
+      )}
+      
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">

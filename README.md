@@ -58,7 +58,7 @@ Our solution goes beyond traditional safety systems by integrating **AI, IoT, AR
   - System health indicators
   - Emergency alerts management
   - Live statistics (active pilgrims, alerts, drones)
-- **Flow**: Entry point → Navigate to specialized modules
+- **Flow**: Entry point → Navigate to specialized modules 
 
 ### 2. **Pilgrim Safety Portal** (`/pilgrim-safety`)
 - **Purpose**: Safety services for pilgrims

@@ -10,7 +10,7 @@ interface StatusCardProps {
   trend?: "up" | "down" | "stable";
 }
 
-export const StatusCard = ({ 
+export const StatusCard = ({  
   title, 
   value,  
   subtitle, 

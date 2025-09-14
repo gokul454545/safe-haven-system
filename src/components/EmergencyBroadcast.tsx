@@ -9,7 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 interface EmergencyBroadcastProps {
   isOpen: boolean;
   onClose: () => void;
-}
+} 
 
 const EmergencyBroadcast = ({ isOpen, onClose }: EmergencyBroadcastProps) => {
   const [message, setMessage] = useState("");

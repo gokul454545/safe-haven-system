@@ -32,7 +32,7 @@ const DroneLiveFeed = ({ drone, isOpen, onClose }: DroneLiveFeedProps) => {
             </Button>
           </div>
         </CardHeader>
-        
+         
         <CardContent className="space-y-6">
           {/* Live Feed Display */}
           <div className="relative bg-black rounded-lg overflow-hidden" style={{ aspectRatio: "16/9" }}>

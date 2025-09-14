@@ -17,7 +17,7 @@ import {
   Eye,
   TrendingUp,
   Megaphone
-} from "lucide-react";
+} from "lucide-react"; 
 import heroImage from "@/assets/hero-dashboard.jpg";
 
 const CommandDashboard = () => {

@@ -13,7 +13,7 @@ const SplashScreen = () => {
     return () => clearTimeout(timer);
   }, [navigate]); 
 
-  return (
+  return ( 
     <div className="min-h-screen bg-gradient-hero flex items-center justify-center">
       <div className="text-center animate-fade-in">
         <div className="animate-float mb-8">

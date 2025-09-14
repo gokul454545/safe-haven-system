@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { BarChart3, TrendingUp, AlertTriangle, Brain, Users, Clock, MapPin, Activity } from "lucide-react";
 
 const Analytics = () => {
-  const predictiveAlerts = [
+  const predictiveAlerts = [ 
     {
       zone: "Sector 4 - Main Ghat",
       riskLevel: "High",

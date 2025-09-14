@@ -14,7 +14,7 @@ const DemoGuide = () => {
     {
       title: "1. Login & Command Center (45s)",
       description: "Start with secure login and view live dashboard",
-      actions: [
+      actions: [ 
         "Click 'Access Command Center' to login",
         "Navigate to Dashboard to see 2.8M pilgrims monitored",
         "Point to live stats: 23 alerts, 98.7% uptime",

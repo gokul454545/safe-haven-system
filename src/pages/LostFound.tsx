@@ -19,7 +19,7 @@ const LostFound = () => {
       time: "2 hours ago", 
       status: "Active Search",
       description: "Wearing white kurta, grey beard"
-    }, 
+    },  
     { 
       id: "LF-2024-002", 
       name: "Priya Sharma", 

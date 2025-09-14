@@ -15,7 +15,7 @@ const AuthPage = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (loginForm.email && loginForm.password) {
+    if (loginForm.email && loginForm.password) { 
       toast({
         title: "Login Successful",
         description: "Welcome to Safe Simhastha!",

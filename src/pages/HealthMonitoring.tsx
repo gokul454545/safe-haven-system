@@ -17,7 +17,7 @@ const HealthMonitoring = () => {
       time: "2 min ago"
     },
     { 
-      id: "HB-4522",
+      id: "HB-4522", 
       pilgrim: "Suresh Gupta",
       age: 45,
       condition: "Heat Exhaustion Risk",

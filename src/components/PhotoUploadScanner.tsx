@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 interface PhotoUploadScannerProps {
   isOpen: boolean;
   onClose: () => void;
-}
+} 
 
 const PhotoUploadScanner = ({ isOpen, onClose }: PhotoUploadScannerProps) => {
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);

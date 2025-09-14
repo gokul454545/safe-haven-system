@@ -18,7 +18,7 @@ import NotFound from "./pages/NotFound";
  
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => ( 
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<DemoGuide />} />
-          <Route path="/demo-guide" element={<DemoGuide />} />
+          {/* <Route path="/demo-guide" element={<DemoGuide />} /> */}
           <Route path="/command-dashboard" element={<CommandDashboard />} />
           <Route path="/pilgrim-safety" element={<PilgrimSafety />} />
           <Route path="/lost-found" element={<LostFound />} />

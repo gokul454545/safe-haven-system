@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
     
-    // Simulate authentication
+    //  Simulate authentication
     setTimeout(() => {
       toast({
         title: "Login Successful",

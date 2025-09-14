@@ -17,7 +17,7 @@ const ImpactSummary = () => {
       subtitle: "Active participants",
       icon: Users,
       color: "text-primary"
-    },
+    }, 
     {
       title: "AI Cameras Active", 
       value: "247",

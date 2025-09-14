@@ -18,7 +18,7 @@ const PilgrimSafety = () => {
       title: "🚨 SOS EMERGENCY ALERT ACTIVATED!",
       description: "Emergency response team has been notified. Help is on the way. Stay calm and stay in your current location.",
       variant: "destructive",
-    });
+    }); 
     
     // Reset SOS active state after 10 seconds
     setTimeout(() => {
